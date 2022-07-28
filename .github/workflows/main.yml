@@ -27,7 +27,7 @@ jobs:
         
       # Runs a single command using the runners shell
       - name: Remove old 1.19 javadoc
-        run: echo [DreamVoid] Remove old 1.19 javadoc && rm -rf ./1.19 && cat ./1.19
+        run: echo [DreamVoid] Remove old 1.19 javadoc && rm -rf ./1.19
 
       # Runs a set of commands using the runners shell
       - name: Fetch new 1.19 javadoc
