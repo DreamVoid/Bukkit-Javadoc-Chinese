@@ -37,7 +37,7 @@ jobs:
           cd ./Chinese_BukkitAPI
           mvn package
           cd ..
-          echo [DreamVoid] Move javadoc to root path && mv ./Chinese_BukkitAPI/apidocs ./1.19 && cat ./1.19
+          echo [DreamVoid] Move javadoc to root path && mv ./Chinese_BukkitAPI/apidocs ./1.19
           rm -rf ./Chinese_BukkitAPI
       - name: GitHub Push
         uses: ad-m/github-push-action@v0.6.0
