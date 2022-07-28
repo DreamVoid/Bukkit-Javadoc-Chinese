@@ -6,6 +6,8 @@ name: Update 1.19 Javadoc
 on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -41,3 +43,5 @@ jobs:
           rm -rf ./Chinese_BukkitAPI
       - name: Git Auto Commit
         uses: stefanzweifel/git-auto-commit-action@v4.14.1
+        with:
+          commit_message: "自动更新Javadoc"
