@@ -27,16 +27,17 @@ jobs:
         
       # Runs a single command using the runners shell
       - name: Remove old 1.19 javadoc
-        run: rm -rf ./1.19
+        run: echo [DreamVoid] Remove old 1.19 javadoc && rm -rf ./1.19 && cat ./1.19
 
       # Runs a set of commands using the runners shell
       - name: Fetch new 1.19 javadoc
         run: |
+          echo [DreamVoid] Build new 1.19 javadoc
           git clone https://github.com/BukkitAPI-Translation-Group/Chinese_BukkitAPI.git
           cd ./Chinese_BukkitAPI
           mvn package
           cd ..
-          mv ./Chinese_BukkitAPI/apidocs ./1.19
+          echo [DreamVoid] Move javadoc to root path && mv ./Chinese_BukkitAPI/apidocs ./1.19 && cat ./1.19
           rm -rf ./Chinese_BukkitAPI
       - name: GitHub Push
         uses: ad-m/github-push-action@v0.6.0
