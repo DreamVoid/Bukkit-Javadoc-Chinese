@@ -39,8 +39,5 @@ jobs:
           cd ..
           echo [DreamVoid] Move javadoc to root path && mv ./Chinese_BukkitAPI/apidocs ./1.19
           rm -rf ./Chinese_BukkitAPI
-      - name: GitHub Push
-        uses: ad-m/github-push-action@v0.6.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main
+      - name: Git Auto Commit
+        uses: stefanzweifel/git-auto-commit-action@v4.14.1
