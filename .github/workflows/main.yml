@@ -38,7 +38,8 @@ jobs:
           cd ./Chinese_BukkitAPI
           mvn package
           cd ..
-          mv ./Chinese_BukkitAPI/apidocs latset
+          mv ./Chinese_BukkitAPI/apidocs ./apidocs
+          mv ./apidocs ./latest
           rm -rf ./Chinese_BukkitAPI
 
       - name: Git Auto Commit
