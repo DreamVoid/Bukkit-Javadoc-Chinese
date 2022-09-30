@@ -34,6 +34,7 @@ org.bukkit.event.vehicle
 org.bukkit.event.weather
 org.bukkit.event.world
 org.bukkit.generator
+org.bukkit.generator.structure
 org.bukkit.help
 org.bukkit.inventory
 org.bukkit.inventory.meta
@@ -49,6 +50,7 @@ org.bukkit.plugin
 org.bukkit.plugin.java
 org.bukkit.plugin.messaging
 org.bukkit.potion
+org.bukkit.profile
 org.bukkit.projectiles
 org.bukkit.scheduler
 org.bukkit.scoreboard
