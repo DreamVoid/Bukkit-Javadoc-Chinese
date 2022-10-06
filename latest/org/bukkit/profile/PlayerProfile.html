@@ -80,14 +80,12 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">PlayerProfile</span><span class="extends-implements">
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Cloneable.html" title="java.lang中的类或接口" class="external-link">Cloneable</a>, <a href="../configuration/serialization/ConfigurationSerializable.html" title="org.bukkit.configuration.serialization中的接口">ConfigurationSerializable</a></span></div>
-<div class="block">A player profile.
+<div class="block">代表一份玩家资料.
  <p>
- A player profile always provides a unique id, a non-empty name, or both. Its
- unique id and name are immutable, but other properties (such as its textures)
- can be altered.
+ 一份玩家资料中始终包含一个玩家唯一 id、一个非空名字，或两者都有.
+ 资料中的唯一 id 和名字是不可变的, 但其它属性(比如皮肤)是可以更改的.
  <p>
- New profiles can be created via
- <a href="../Server.html#createPlayerProfile(java.util.UUID,java.lang.String)"><code>Server.createPlayerProfile(UUID, String)</code></a>.</div>
+ 可以通过 <a href="../Server.html#createPlayerProfile(java.util.UUID,java.lang.String)"><code>Server.createPlayerProfile(UUID, String)</code></a> 创建新玩家资料.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -108,32 +106,32 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Cloneable.h
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/Nullable.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@Nullable</a> <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html" title="java.lang中的类或接口" class="external-link">String</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getName()" class="member-name-link">getName</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Gets the player name.</div>
+<div class="block">获取玩家名.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a> <a href="PlayerTextures.html" title="org.bukkit.profile中的接口">PlayerTextures</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getTextures()" class="member-name-link">getTextures</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Gets the <a href="PlayerTextures.html" title="org.bukkit.profile中的接口"><code>PlayerTextures</code></a> of this profile.</div>
+<div class="block">获取<code>PlayerTextures玩家纹理</code>信息 (玩家的皮肤+披风).</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/Nullable.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@Nullable</a> <a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html" title="java.util中的类或接口" class="external-link">UUID</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getUniqueId()" class="member-name-link">getUniqueId</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Gets the player's unique id.</div>
+<div class="block">获取玩家的唯一 id.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#isComplete()" class="member-name-link">isComplete</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Checks whether this profile is complete.</div>
+<div class="block">检测此资料是否完整.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setTextures(org.bukkit.profile.PlayerTextures)" class="member-name-link">setTextures</a><wbr>(<a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/Nullable.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@Nullable</a> <a href="PlayerTextures.html" title="org.bukkit.profile中的接口">PlayerTextures</a>&nbsp;textures)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Copies the given textures.</div>
+<div class="block">复制指定纹理并覆盖此资料中的纹理.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a> <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html" title="java.util.concurrent中的类或接口" class="external-link">CompletableFuture</a>&lt;<a href="PlayerProfile.html" title="org.bukkit.profile中的接口">PlayerProfile</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#update()" class="member-name-link">update</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Produces an updated player profile based on this profile.</div>
+<div class="block">基于此资料生成一份更新的玩家资料.</div>
 </div>
 </div>
 </div>
@@ -157,10 +155,12 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Cloneable.h
 <h3>getUniqueId</h3>
 <div class="member-signature"><span class="annotations"><a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/Nullable.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@Nullable</a>
 </span><span class="return-type"><a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/Nullable.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@Nullable</a> <a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html" title="java.util中的类或接口" class="external-link">UUID</a></span>&nbsp;<span class="element-name">getUniqueId</span>()</div>
-<div class="block">Gets the player's unique id.</div>
+<div class="block">获取玩家的唯一 id.
+ <p>
+ 原文:Gets the player's unique id.</div>
 <dl class="notes">
 <dt>返回:</dt>
-<dd>the player's unique id, or <code>null</code> if not available</dd>
+<dd>玩家唯一 id, 如果不存在/未设置则为 null</dd>
 </dl>
 </section>
 </li>
@@ -169,10 +169,12 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Cloneable.h
 <h3>getName</h3>
 <div class="member-signature"><span class="annotations"><a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/Nullable.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@Nullable</a>
 </span><span class="return-type"><a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/Nullable.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@Nullable</a> <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html" title="java.lang中的类或接口" class="external-link">String</a></span>&nbsp;<span class="element-name">getName</span>()</div>
-<div class="block">Gets the player name.</div>
+<div class="block">获取玩家名.
+ <p>
+ 原文:Gets the player name.</div>
 <dl class="notes">
 <dt>返回:</dt>
-<dd>the player name, or <code>null</code> if not available</dd>
+<dd>玩家名, 如果不存在/未设置则为 null</dd>
 </dl>
 </section>
 </li>
@@ -181,10 +183,12 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Cloneable.h
 <h3>getTextures</h3>
 <div class="member-signature"><span class="annotations"><a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a>
 </span><span class="return-type"><a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a> <a href="PlayerTextures.html" title="org.bukkit.profile中的接口">PlayerTextures</a></span>&nbsp;<span class="element-name">getTextures</span>()</div>
-<div class="block">Gets the <a href="PlayerTextures.html" title="org.bukkit.profile中的接口"><code>PlayerTextures</code></a> of this profile.</div>
+<div class="block">获取<code>PlayerTextures玩家纹理</code>信息 (玩家的皮肤+披风).
+ <p>
+ 原文:Gets the <a href="PlayerTextures.html" title="org.bukkit.profile中的接口"><code>PlayerTextures</code></a> of this profile.</div>
 <dl class="notes">
 <dt>返回:</dt>
-<dd>the textures, not <code>null</code></dd>
+<dd><code>PlayerTextures玩家纹理</code>信息, 不为 null</dd>
 </dl>
 </section>
 </li>
@@ -193,11 +197,12 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Cloneable.h
 <h3>setTextures</h3>
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">setTextures</span><wbr><span class="parameters">(<a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/Nullable.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@Nullable</a>
  <a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/Nullable.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@Nullable</a> <a href="PlayerTextures.html" title="org.bukkit.profile中的接口">PlayerTextures</a>&nbsp;textures)</span></div>
-<div class="block">Copies the given textures.</div>
+<div class="block">复制指定纹理并覆盖此资料中的纹理.
+ <p>
+ 原文:Copies the given textures.</div>
 <dl class="notes">
 <dt>参数:</dt>
-<dd><code>textures</code> - the textures to copy, or <code>null</code> to clear the
- textures</dd>
+<dd><code>textures</code> - 要复制的纹理, 指定 null 以清除纹理</dd>
 </dl>
 </section>
 </li>
@@ -205,13 +210,17 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Cloneable.h
 <section class="detail" id="isComplete()">
 <h3>isComplete</h3>
 <div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">isComplete</span>()</div>
-<div class="block">Checks whether this profile is complete.
+<div class="block">检测此资料是否完整.
+ <p>
+ 玩家名、唯一 id、纹理齐聚一堂即可认为此资料是完整的.
+ <p>
+ 原文:Checks whether this profile is complete.
  <p>
  A profile is currently considered complete if it has a name, a unique id,
  and textures.</div>
 <dl class="notes">
 <dt>返回:</dt>
-<dd><code>true</code> if this profile is complete</dd>
+<dd>如果资料完整则为 <code>true</code></dd>
 </dl>
 </section>
 </li>
@@ -220,7 +229,27 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Cloneable.h
 <h3>update</h3>
 <div class="member-signature"><span class="annotations"><a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a>
 </span><span class="return-type"><a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a> <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html" title="java.util.concurrent中的类或接口" class="external-link">CompletableFuture</a>&lt;<a href="PlayerProfile.html" title="org.bukkit.profile中的接口">PlayerProfile</a>&gt;</span>&nbsp;<span class="element-name">update</span>()</div>
-<div class="block">Produces an updated player profile based on this profile.
+<div class="block">基于此资料生成一份更新的玩家资料.
+ <p>
+ 本方法将通过补全资料中缺失的信息 (玩家名、唯一 id、纹理等) 来尝试生成一份完整的游戏资料,
+ 并同时更新已有属性 (玩家名、纹理等)为官方的最新值.
+ 此操作不会修改本资料, 但生成一份全新已更新的<a href="PlayerProfile.html" title="org.bukkit.profile中的接口"><code>玩家资料</code></a>.
+ <p>
+ 如果唯一 id 或名字所对应的玩家不存在, 此操作将生成与当前资料等同的资料 (注:不同实例),
+ 此时生成的资料可能不完整.
+ <p>
+ 此操作是异步的: 更新资料的操作将在另一个线程发起一个对外连接, 以拉取官方最新资料属性.
+ 一旦资料更新完成并可用, 本方法返回的 <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html" title="java.util.concurrent中的类或接口" class="external-link"><code>CompletableFuture</code></a> 将完成.
+ 为了不阻塞服务器的主线程, 您不应在主线程等待 CompletableFuture 返回结果.
+ 相反, 如果您想在资料更新完成时利用更新的资料做些事情, 您可以使用这样的代码:
+ <pre>
+ profile.update().thenAcceptAsync(updatedProfile -> {
+     // Do something with the updated profile:
+     // ...
+ }, runnable -> Bukkit.getScheduler().runTask(plugin, runnable));
+ </pre>
+ <p>
+ 原文:Produces an updated player profile based on this profile.
  <p>
  This tries to produce a completed profile by filling in missing
  properties (name, unique id, textures, etc.), and updates existing
@@ -248,8 +277,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Cloneable.h
  </pre></div>
 <dl class="notes">
 <dt>返回:</dt>
-<dd>a completable future that gets completed with the updated
- PlayerProfile once it is available</dd>
+<dd>一个 CompletableFuture, 当资料更新完成时此 Future 将完成</dd>
 </dl>
 </section>
 </li>

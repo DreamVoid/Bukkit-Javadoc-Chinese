@@ -105,7 +105,7 @@ extends <a href="TileState.html" title="org.bukkit.block中的接口">TileState<
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/Nullable.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@Nullable</a> <a href="../profile/PlayerProfile.html" title="org.bukkit.profile中的接口">PlayerProfile</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getOwnerProfile()" class="member-name-link">getOwnerProfile</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Gets the profile of the player who owns the skull.</div>
+<div class="block">获取拥有此头颅的玩家的资料.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/Nullable.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@Nullable</a> <a href="../OfflinePlayer.html" title="org.bukkit中的接口">OfflinePlayer</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getOwningPlayer()" class="member-name-link">getOwningPlayer</a>()</code></div>
@@ -141,7 +141,7 @@ extends <a href="TileState.html" title="org.bukkit.block中的接口">TileState<
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setOwnerProfile(org.bukkit.profile.PlayerProfile)" class="member-name-link">setOwnerProfile</a><wbr>(<a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/Nullable.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@Nullable</a> <a href="../profile/PlayerProfile.html" title="org.bukkit.profile中的接口">PlayerProfile</a>&nbsp;profile)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Sets the profile of the player who owns the skull.</div>
+<div class="block">设置拥有此头颅的玩家的资料.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setOwningPlayer(org.bukkit.OfflinePlayer)" class="member-name-link">setOwningPlayer</a><wbr>(<a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a> <a href="../OfflinePlayer.html" title="org.bukkit中的接口">OfflinePlayer</a>&nbsp;player)</code></div>
@@ -280,11 +280,13 @@ extends <a href="TileState.html" title="org.bukkit.block中的接口">TileState<
 <h3>getOwnerProfile</h3>
 <div class="member-signature"><span class="annotations"><a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/Nullable.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@Nullable</a>
 </span><span class="return-type"><a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/Nullable.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@Nullable</a> <a href="../profile/PlayerProfile.html" title="org.bukkit.profile中的接口">PlayerProfile</a></span>&nbsp;<span class="element-name">getOwnerProfile</span>()</div>
-<div class="block">Gets the profile of the player who owns the skull. This player profile
+<div class="block">获取拥有此头颅的玩家的资料. 此玩家资料所含的纹理取决于头颅类型.
+ <p>
+ 原文:Gets the profile of the player who owns the skull. This player profile
  may appear as the texture depending on skull type.</div>
 <dl class="notes">
 <dt>返回:</dt>
-<dd>the profile of the owning player</dd>
+<dd>头颅所有者的资料</dd>
 </dl>
 </section>
 </li>
@@ -293,7 +295,12 @@ extends <a href="TileState.html" title="org.bukkit.block中的接口">TileState<
 <h3>setOwnerProfile</h3>
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">setOwnerProfile</span><wbr><span class="parameters">(<a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/Nullable.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@Nullable</a>
  <a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/Nullable.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@Nullable</a> <a href="../profile/PlayerProfile.html" title="org.bukkit.profile中的接口">PlayerProfile</a>&nbsp;profile)</span></div>
-<div class="block">Sets the profile of the player who owns the skull. This player profile
+<div class="block">设置拥有此头颅的玩家的资料. 此玩家资料所含的纹理取决于头颅类型.
+ <p>
+ 此资料必须包含唯一 id 和皮肤纹理. 如果两者都缺, 则资料必须包含玩家名,
+ 服务器将利用玩家名来尝试查找其唯一 id 和皮肤纹理.
+ <p>
+ 原文:Sets the profile of the player who owns the skull. This player profile
  may appear as the texture depending on skull type.
  <p>
  The profile must contain both a unique id and a skin texture. If either
@@ -301,10 +308,9 @@ extends <a href="TileState.html" title="org.bukkit.block中的接口">TileState<
  will then attempt to look up the unique id and skin texture.</div>
 <dl class="notes">
 <dt>参数:</dt>
-<dd><code>profile</code> - the profile of the owning player</dd>
+<dd><code>profile</code> - 头颅所有者的资料</dd>
 <dt>抛出:</dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html" title="java.lang中的类或接口" class="external-link">IllegalArgumentException</a></code> - if the profile does not contain the
- necessary information</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html" title="java.lang中的类或接口" class="external-link">IllegalArgumentException</a></code> - 如果资料没有包含必要信息</dd>
 </dl>
 </section>
 </li>
