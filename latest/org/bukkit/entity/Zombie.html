@@ -111,7 +111,7 @@ extends <a href="Monster.html" title="org.bukkit.entity中的接口">Monster</a>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#canBreakDoors()" class="member-name-link">canBreakDoors</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Gets whether this zombie can break doors</div>
+<div class="block">获得这个僵尸是否能破坏门.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>int</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getConversionTime()" class="member-name-link">getConversionTime</a>()</code></div>
@@ -154,9 +154,7 @@ extends <a href="Monster.html" title="org.bukkit.entity中的接口">Monster</a>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setCanBreakDoors(boolean)" class="member-name-link">setCanBreakDoors</a><wbr>(boolean&nbsp;flag)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Sets whether this zombie can break doors
-
- This will be ignored if the entity is a Drowned.</div>
+<div class="block">设置僵尸是否能破坏门.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setConversionTime(int)" class="member-name-link">setConversionTime</a><wbr>(int&nbsp;time)</code></div>
@@ -388,10 +386,13 @@ extends <a href="Monster.html" title="org.bukkit.entity中的接口">Monster</a>
 <section class="detail" id="canBreakDoors()">
 <h3>canBreakDoors</h3>
 <div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">canBreakDoors</span>()</div>
-<div class="block">Gets whether this zombie can break doors</div>
+<div class="block">获得这个僵尸是否能破坏门.
+ <p>
+ 原文:
+ Gets whether this zombie can break doors</div>
 <dl class="notes">
 <dt>返回:</dt>
-<dd>Whether this zombie can break doors</dd>
+<dd>僵尸是否能破坏门</dd>
 </dl>
 </section>
 </li>
@@ -399,7 +400,12 @@ extends <a href="Monster.html" title="org.bukkit.entity中的接口">Monster</a>
 <section class="detail" id="setCanBreakDoors(boolean)">
 <h3>setCanBreakDoors</h3>
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">setCanBreakDoors</span><wbr><span class="parameters">(boolean&nbsp;flag)</span></div>
-<div class="block">Sets whether this zombie can break doors
+<div class="block">设置僵尸是否能破坏门.
+
+ 当实体是溺尸时将被忽略.当实体破坏门时也会停止破坏.
+ <p>
+ 原文:
+ Sets whether this zombie can break doors
 
  This will be ignored if the entity is a Drowned. Will also stop the action if
  the entity is currently breaking a door.</div>

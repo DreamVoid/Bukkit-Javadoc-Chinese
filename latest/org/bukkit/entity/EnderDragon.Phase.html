@@ -89,7 +89,7 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public static enum </span><span class="element-name type-name-label">EnderDragon.Phase</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html" title="java.lang中的类或接口" class="external-link">Enum</a>&lt;<a href="EnderDragon.Phase.html" title="org.bukkit.entity中的枚举">EnderDragon.Phase</a>&gt;</span></div>
-<div class="block">Represents a phase or action that an Ender Dragon can perform.</div>
+<div class="block">表示末影龙可以执行的阶段或动作.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -112,50 +112,47 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">说明</div>
 <div class="col-first even-row-color"><code><a href="#BREATH_ATTACK" class="member-name-link">BREATH_ATTACK</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">The dragon will attack with dragon breath at its current location.</div>
+<div class="block">末影龙会在当前位置使用龙息攻击.</div>
 </div>
 <div class="col-first odd-row-color"><code><a href="#CHARGE_PLAYER" class="member-name-link">CHARGE_PLAYER</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">The dragon will charge a player.</div>
+<div class="block">末影龙将会向玩家冲刺.</div>
 </div>
 <div class="col-first even-row-color"><code><a href="#CIRCLING" class="member-name-link">CIRCLING</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">The dragon will circle outside the ring of pillars if ender
- crystals remain or inside the ring if not.</div>
+<div class="block">如果有末影水晶，末影龙会在柱子环外盘旋，否则会在柱子环内盘旋.</div>
 </div>
 <div class="col-first odd-row-color"><code><a href="#DYING" class="member-name-link">DYING</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">The dragon will fly to the vicinity of the portal and die.</div>
+<div class="block">末影龙将会飞到传送门附近并且死去.</div>
 </div>
 <div class="col-first even-row-color"><code><a href="#FLY_TO_PORTAL" class="member-name-link">FLY_TO_PORTAL</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">The dragon will fly towards the empty portal (approaching
- from the other side, if applicable).</div>
+<div class="block">末影龙将飞向空传送门 (从另一边接近，如果适用).</div>
 </div>
 <div class="col-first odd-row-color"><code><a href="#HOVER" class="member-name-link">HOVER</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">The dragon will hover at its current location, not performing any actions.</div>
+<div class="block">末影龙将悬停在当前位置，不执行任何操作.</div>
 </div>
 <div class="col-first even-row-color"><code><a href="#LAND_ON_PORTAL" class="member-name-link">LAND_ON_PORTAL</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">The dragon will land on on the portal.</div>
+<div class="block">末影龙将降落在传送门上。</div>
 </div>
 <div class="col-first odd-row-color"><code><a href="#LEAVE_PORTAL" class="member-name-link">LEAVE_PORTAL</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">The dragon will leave the portal.</div>
+<div class="block">末影龙将要离开传送门.</div>
 </div>
 <div class="col-first even-row-color"><code><a href="#ROAR_BEFORE_ATTACK" class="member-name-link">ROAR_BEFORE_ATTACK</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">The dragon will roar before performing a breath attack.</div>
+<div class="block">末影龙将会在进行吐息攻击前咆哮.</div>
 </div>
 <div class="col-first odd-row-color"><code><a href="#SEARCH_FOR_BREATH_ATTACK_TARGET" class="member-name-link">SEARCH_FOR_BREATH_ATTACK_TARGET</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">The dragon will search for a player to attack with dragon breath.</div>
+<div class="block">末影龙将会会寻找玩家用龙息攻击。</div>
 </div>
 <div class="col-first even-row-color"><code><a href="#STRAFING" class="member-name-link">STRAFING</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">The dragon will fly towards a targeted player and shoot a
- fireball when within 64 blocks.</div>
+<div class="block">末影龙会飞向目标玩家并在 64 格内发射火球.</div>
 </div>
 </div>
 </section>
@@ -206,84 +203,78 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="CIRCLING">
 <h3>CIRCLING</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="EnderDragon.Phase.html" title="org.bukkit.entity中的枚举">EnderDragon.Phase</a></span>&nbsp;<span class="element-name">CIRCLING</span></div>
-<div class="block">The dragon will circle outside the ring of pillars if ender
- crystals remain or inside the ring if not.</div>
+<div class="block">如果有末影水晶，末影龙会在柱子环外盘旋，否则会在柱子环内盘旋.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="STRAFING">
 <h3>STRAFING</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="EnderDragon.Phase.html" title="org.bukkit.entity中的枚举">EnderDragon.Phase</a></span>&nbsp;<span class="element-name">STRAFING</span></div>
-<div class="block">The dragon will fly towards a targeted player and shoot a
- fireball when within 64 blocks.</div>
+<div class="block">末影龙会飞向目标玩家并在 64 格内发射火球.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="FLY_TO_PORTAL">
 <h3>FLY_TO_PORTAL</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="EnderDragon.Phase.html" title="org.bukkit.entity中的枚举">EnderDragon.Phase</a></span>&nbsp;<span class="element-name">FLY_TO_PORTAL</span></div>
-<div class="block">The dragon will fly towards the empty portal (approaching
- from the other side, if applicable).</div>
+<div class="block">末影龙将飞向空传送门 (从另一边接近，如果适用).</div>
 </section>
 </li>
 <li>
 <section class="detail" id="LAND_ON_PORTAL">
 <h3>LAND_ON_PORTAL</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="EnderDragon.Phase.html" title="org.bukkit.entity中的枚举">EnderDragon.Phase</a></span>&nbsp;<span class="element-name">LAND_ON_PORTAL</span></div>
-<div class="block">The dragon will land on on the portal. If the dragon is not near
- the portal, it will fly to it before mounting.</div>
+<div class="block">末影龙将降落在传送门上。如果末影龙不在传送门附近，它马上飞向传送门.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="LEAVE_PORTAL">
 <h3>LEAVE_PORTAL</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="EnderDragon.Phase.html" title="org.bukkit.entity中的枚举">EnderDragon.Phase</a></span>&nbsp;<span class="element-name">LEAVE_PORTAL</span></div>
-<div class="block">The dragon will leave the portal.</div>
+<div class="block">末影龙将要离开传送门.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="BREATH_ATTACK">
 <h3>BREATH_ATTACK</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="EnderDragon.Phase.html" title="org.bukkit.entity中的枚举">EnderDragon.Phase</a></span>&nbsp;<span class="element-name">BREATH_ATTACK</span></div>
-<div class="block">The dragon will attack with dragon breath at its current location.</div>
+<div class="block">末影龙会在当前位置使用龙息攻击.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="SEARCH_FOR_BREATH_ATTACK_TARGET">
 <h3>SEARCH_FOR_BREATH_ATTACK_TARGET</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="EnderDragon.Phase.html" title="org.bukkit.entity中的枚举">EnderDragon.Phase</a></span>&nbsp;<span class="element-name">SEARCH_FOR_BREATH_ATTACK_TARGET</span></div>
-<div class="block">The dragon will search for a player to attack with dragon breath.
- If no player is close enough to the dragon for 5 seconds, the
- dragon will charge at a player within 150 blocks or will take off
- and begin circling if no player is found.</div>
+<div class="block">末影龙将会会寻找玩家用龙息攻击。
+ 如果 5 秒内没有玩家足够靠近末影龙，末影龙将冲向 150 格内的玩家，如果没有找到玩家，末影龙将起飞并开始盘旋.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="ROAR_BEFORE_ATTACK">
 <h3>ROAR_BEFORE_ATTACK</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="EnderDragon.Phase.html" title="org.bukkit.entity中的枚举">EnderDragon.Phase</a></span>&nbsp;<span class="element-name">ROAR_BEFORE_ATTACK</span></div>
-<div class="block">The dragon will roar before performing a breath attack.</div>
+<div class="block">末影龙将会在进行吐息攻击前咆哮.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="CHARGE_PLAYER">
 <h3>CHARGE_PLAYER</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="EnderDragon.Phase.html" title="org.bukkit.entity中的枚举">EnderDragon.Phase</a></span>&nbsp;<span class="element-name">CHARGE_PLAYER</span></div>
-<div class="block">The dragon will charge a player.</div>
+<div class="block">末影龙将会向玩家冲刺.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="DYING">
 <h3>DYING</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="EnderDragon.Phase.html" title="org.bukkit.entity中的枚举">EnderDragon.Phase</a></span>&nbsp;<span class="element-name">DYING</span></div>
-<div class="block">The dragon will fly to the vicinity of the portal and die.</div>
+<div class="block">末影龙将会飞到传送门附近并且死去.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="HOVER">
 <h3>HOVER</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="EnderDragon.Phase.html" title="org.bukkit.entity中的枚举">EnderDragon.Phase</a></span>&nbsp;<span class="element-name">HOVER</span></div>
-<div class="block">The dragon will hover at its current location, not performing any actions.</div>
+<div class="block">末影龙将悬停在当前位置，不执行任何操作.</div>
 </section>
 </li>
 </ul>
