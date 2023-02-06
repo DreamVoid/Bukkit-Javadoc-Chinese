@@ -1,0 +1,48 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Update Javadoc
+
+# Controls when the workflow will run
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v2
+        with:
+          java-version: '17'
+          distribution: 'zulu'
+        
+      # Runs a single command using the runners shell
+      - name: Remove old latest javadoc
+        run: rm -rf ./latest
+
+      # Runs a set of commands using the runners shell
+      - name: Fetch new latest javadoc
+        run: |
+          git clone https://github.com/BukkitAPI-Translation-Group/Chinese_BukkitAPI.git
+          cd ./Chinese_BukkitAPI
+          mvn package
+          cd ..
+          mv ./Chinese_BukkitAPI/apidocs ./apidocs
+          mv ./apidocs ./latest
+          rm -rf ./Chinese_BukkitAPI
+
+      - name: Git Auto Commit
+        uses: stefanzweifel/git-auto-commit-action@v4.14.1
+        with:
+          commit_message: "自动更新Javadoc"
