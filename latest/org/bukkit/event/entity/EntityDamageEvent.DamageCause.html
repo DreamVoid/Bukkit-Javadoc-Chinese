@@ -89,7 +89,7 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public static enum </span><span class="element-name type-name-label">EntityDamageEvent.DamageCause</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html" title="java.lang中的类或接口" class="external-link">Enum</a>&lt;<a href="EntityDamageEvent.DamageCause.html" title="org.bukkit.event.entity中的枚举">EntityDamageEvent.DamageCause</a>&gt;</span></div>
-<div class="block">An enum to specify the cause of the damage</div>
+<div class="block">造成伤害的原因.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -112,110 +112,107 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">说明</div>
 <div class="col-first even-row-color"><code><a href="#BLOCK_EXPLOSION" class="member-name-link">BLOCK_EXPLOSION</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">Damage caused by being in the area when a block explodes.</div>
+<div class="block">在爆炸范围内受到的伤害.</div>
 </div>
 <div class="col-first odd-row-color"><code><a href="#CONTACT" class="member-name-link">CONTACT</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">Damage caused when an entity contacts a block such as a Cactus,
- Dripstone (Stalagmite) or Berry Bush.</div>
+<div class="block">实体接触仙人掌、钟乳石（石笋）或浆果丛等方块时受到的伤害.</div>
 </div>
 <div class="col-first even-row-color"><code><a href="#CRAMMING" class="member-name-link">CRAMMING</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">Damage caused when an entity is colliding with too many entities due
- to the maxEntityCramming game rule.</div>
+<div class="block">由于游戏规则:maxEntityCramming,一个实体和许多其他实体挤压受到的伤害.</div>
 </div>
 <div class="col-first odd-row-color"><code><a href="#CUSTOM" class="member-name-link">CUSTOM</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">Custom damage.</div>
+<div class="block">自定义伤害.</div>
 </div>
 <div class="col-first even-row-color"><code><a href="#DRAGON_BREATH" class="member-name-link">DRAGON_BREATH</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">Damage caused by a dragon breathing fire.</div>
+<div class="block">龙息造成的伤害 (恶龙咆哮~).</div>
 </div>
 <div class="col-first odd-row-color"><code><a href="#DROWNING" class="member-name-link">DROWNING</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">Damage caused by running out of air while in water</div>
+<div class="block">在水中耗尽空气受到的伤害.</div>
 </div>
 <div class="col-first even-row-color"><code><a href="#DRYOUT" class="member-name-link">DRYOUT</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">Damage caused when an entity that should be in water is not.</div>
+<div class="block">实体(例如:鱼)不在水中时受到的伤害.</div>
 </div>
 <div class="col-first odd-row-color"><code><a href="#ENTITY_ATTACK" class="member-name-link">ENTITY_ATTACK</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">Damage caused when an entity attacks another entity.</div>
+<div class="block">一个实体攻击另一个实体时受到的伤害.</div>
 </div>
 <div class="col-first even-row-color"><code><a href="#ENTITY_EXPLOSION" class="member-name-link">ENTITY_EXPLOSION</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">Damage caused by being in the area when an entity, such as a
- Creeper, explodes.</div>
+<div class="block">在实体爆炸范围内受到的伤害,例如苦力怕的爆炸.</div>
 </div>
 <div class="col-first odd-row-color"><code><a href="#ENTITY_SWEEP_ATTACK" class="member-name-link">ENTITY_SWEEP_ATTACK</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">Damage caused when an entity attacks another entity in a sweep attack.</div>
+<div class="block">一个实体在横扫范围中攻击到另一个实体时受到的伤害.</div>
 </div>
 <div class="col-first even-row-color"><code><a href="#FALL" class="member-name-link">FALL</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">Damage caused when an entity falls a distance greater than 3 blocks</div>
+<div class="block">实体掉落高度大于 3 格时受到的伤害.</div>
 </div>
 <div class="col-first odd-row-color"><code><a href="#FALLING_BLOCK" class="member-name-link">FALLING_BLOCK</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">Damage caused by being hit by a falling block which deals damage</div>
+<div class="block">被掉落中的方块砸中造成的伤害</div>
 </div>
 <div class="col-first even-row-color"><code><a href="#FIRE" class="member-name-link">FIRE</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">Damage caused by direct exposure to fire</div>
+<div class="block">直接暴露在火中受到的伤害.</div>
 </div>
 <div class="col-first odd-row-color"><code><a href="#FIRE_TICK" class="member-name-link">FIRE_TICK</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">Damage caused due to burns caused by fire</div>
+<div class="block">由于烧伤造成的伤害.</div>
 </div>
 <div class="col-first even-row-color"><code><a href="#FLY_INTO_WALL" class="member-name-link">FLY_INTO_WALL</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">Damage caused when an entity runs into a wall.</div>
+<div class="block">实体撞墙时造成的伤害.</div>
 </div>
 <div class="col-first odd-row-color"><code><a href="#FREEZE" class="member-name-link">FREEZE</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">Damage caused from freezing.</div>
+<div class="block">冻伤引起的伤害.</div>
 </div>
 <div class="col-first even-row-color"><code><a href="#HOT_FLOOR" class="member-name-link">HOT_FLOOR</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">Damage caused when an entity steps on <a href="../../Material.html#MAGMA_BLOCK"><code>Material.MAGMA_BLOCK</code></a>.</div>
+<div class="block">实体站在<a href="../../Material.html#MAGMA_BLOCK"><code>Material.MAGMA_BLOCK</code></a>上时收到的伤害.</div>
 </div>
 <div class="col-first odd-row-color"><code><a href="#LAVA" class="member-name-link">LAVA</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">Damage caused by direct exposure to lava</div>
+<div class="block">直接暴露在熔浆受到的伤害.</div>
 </div>
 <div class="col-first even-row-color"><code><a href="#LIGHTNING" class="member-name-link">LIGHTNING</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">Damage caused by being struck by lightning</div>
+<div class="block">雷击造成的伤害.</div>
 </div>
 <div class="col-first odd-row-color"><code><a href="#MAGIC" class="member-name-link">MAGIC</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">Damage caused by being hit by a damage potion or spell</div>
+<div class="block">伤害药水或魔法造成的伤害.</div>
 </div>
 <div class="col-first even-row-color"><code><a href="#MELTING" class="member-name-link">MELTING</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">Damage caused due to a snowman melting</div>
+<div class="block">雪人由于融化受到的伤害.</div>
 </div>
 <div class="col-first odd-row-color"><code><a href="#POISON" class="member-name-link">POISON</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">Damage caused due to an ongoing poison effect</div>
+<div class="block">由于持续性毒药造成的伤害.</div>
 </div>
 <div class="col-first even-row-color"><code><a href="#PROJECTILE" class="member-name-link">PROJECTILE</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">Damage caused when attacked by a projectile.</div>
+<div class="block">被抛射物攻击时受到的伤害.</div>
 </div>
 <div class="col-first odd-row-color"><code><a href="#SONIC_BOOM" class="member-name-link">SONIC_BOOM</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">Damage caused by the Sonic Boom attack from <a href="../../entity/Warden.html" title="org.bukkit.entity中的接口"><code>Warden</code></a></div>
+<div class="block">来自<a href="../../entity/Warden.html" title="org.bukkit.entity中的接口"><code>Warden</code></a>音波攻击造成的伤害.</div>
 </div>
 <div class="col-first even-row-color"><code><a href="#STARVATION" class="member-name-link">STARVATION</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">Damage caused by starving due to having an empty hunger bar</div>
+<div class="block">当饥饿值为空时受到的伤害.</div>
 </div>
 <div class="col-first odd-row-color"><code><a href="#SUFFOCATION" class="member-name-link">SUFFOCATION</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">Damage caused by being put in a block</div>
+<div class="block">被方块卡住受到的伤害.</div>
 </div>
 <div class="col-first even-row-color"><code><a href="#SUICIDE" class="member-name-link">SUICIDE</a></code></div>
 <div class="col-last even-row-color">
@@ -223,16 +220,15 @@ loadScripts(document, 'script');</script>
 </div>
 <div class="col-first odd-row-color"><code><a href="#THORNS" class="member-name-link">THORNS</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">Damage caused in retaliation to another attack by the Thorns
- enchantment.</div>
+<div class="block">被荆棘反弹的攻击所造成的伤害(反伤).</div>
 </div>
 <div class="col-first even-row-color"><code><a href="#VOID" class="member-name-link">VOID</a></code></div>
 <div class="col-last even-row-color">
-<div class="block">Damage caused by falling into the void</div>
+<div class="block">掉入虚空受到的伤害.</div>
 </div>
 <div class="col-first odd-row-color"><code><a href="#WITHER" class="member-name-link">WITHER</a></code></div>
 <div class="col-last odd-row-color">
-<div class="block">Damage caused by Wither potion effect</div>
+<div class="block">凋零效果造成的伤害.</div>
 </div>
 </div>
 </section>
@@ -283,7 +279,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="CONTACT">
 <h3>CONTACT</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="EntityDamageEvent.DamageCause.html" title="org.bukkit.event.entity中的枚举">EntityDamageEvent.DamageCause</a></span>&nbsp;<span class="element-name">CONTACT</span></div>
-<div class="block">Damage caused when an entity contacts a block such as a Cactus,
+<div class="block">实体接触仙人掌、钟乳石（石笋）或浆果丛等方块时受到的伤害.
+ <p>
+ 伤害:动态改变.
+ <p>
+ 原文:
+ Damage caused when an entity contacts a block such as a Cactus,
  Dripstone (Stalagmite) or Berry Bush.
  <p>
  Damage: variable</div>
@@ -293,7 +294,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="ENTITY_ATTACK">
 <h3>ENTITY_ATTACK</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="EntityDamageEvent.DamageCause.html" title="org.bukkit.event.entity中的枚举">EntityDamageEvent.DamageCause</a></span>&nbsp;<span class="element-name">ENTITY_ATTACK</span></div>
-<div class="block">Damage caused when an entity attacks another entity.
+<div class="block">一个实体攻击另一个实体时受到的伤害.
+ <p>
+ 伤害:动态改变.
+ <p>
+ 原文:
+ Damage caused when an entity attacks another entity.
  <p>
  Damage: variable</div>
 </section>
@@ -302,7 +308,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="ENTITY_SWEEP_ATTACK">
 <h3>ENTITY_SWEEP_ATTACK</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="EntityDamageEvent.DamageCause.html" title="org.bukkit.event.entity中的枚举">EntityDamageEvent.DamageCause</a></span>&nbsp;<span class="element-name">ENTITY_SWEEP_ATTACK</span></div>
-<div class="block">Damage caused when an entity attacks another entity in a sweep attack.
+<div class="block">一个实体在横扫范围中攻击到另一个实体时受到的伤害.
+ <p>
+ 伤害:动态改变.
+ <p>
+ 原文:
+ Damage caused when an entity attacks another entity in a sweep attack.
  <p>
  Damage: variable</div>
 </section>
@@ -311,7 +322,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="PROJECTILE">
 <h3>PROJECTILE</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="EntityDamageEvent.DamageCause.html" title="org.bukkit.event.entity中的枚举">EntityDamageEvent.DamageCause</a></span>&nbsp;<span class="element-name">PROJECTILE</span></div>
-<div class="block">Damage caused when attacked by a projectile.
+<div class="block">被抛射物攻击时受到的伤害.
+ <p>
+ 伤害:动态改变.
+ <p>
+ 原文:
+ Damage caused when attacked by a projectile.
  <p>
  Damage: variable</div>
 </section>
@@ -320,7 +336,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="SUFFOCATION">
 <h3>SUFFOCATION</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="EntityDamageEvent.DamageCause.html" title="org.bukkit.event.entity中的枚举">EntityDamageEvent.DamageCause</a></span>&nbsp;<span class="element-name">SUFFOCATION</span></div>
-<div class="block">Damage caused by being put in a block
+<div class="block">被方块卡住受到的伤害.
+ <p>
+ 伤害:1.
+ <p>
+ 原文:
+ Damage caused by being put in a block
  <p>
  Damage: 1</div>
 </section>
@@ -329,7 +350,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="FALL">
 <h3>FALL</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="EntityDamageEvent.DamageCause.html" title="org.bukkit.event.entity中的枚举">EntityDamageEvent.DamageCause</a></span>&nbsp;<span class="element-name">FALL</span></div>
-<div class="block">Damage caused when an entity falls a distance greater than 3 blocks
+<div class="block">实体掉落高度大于 3 格时受到的伤害.
+ <p>
+ 伤害: 掉落高度 - 3.0.
+ <p>
+ 原文:
+ Damage caused when an entity falls a distance greater than 3 blocks
  <p>
  Damage: fall height - 3.0</div>
 </section>
@@ -338,7 +364,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="FIRE">
 <h3>FIRE</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="EntityDamageEvent.DamageCause.html" title="org.bukkit.event.entity中的枚举">EntityDamageEvent.DamageCause</a></span>&nbsp;<span class="element-name">FIRE</span></div>
-<div class="block">Damage caused by direct exposure to fire
+<div class="block">直接暴露在火中受到的伤害.
+ <p>
+ 伤害: 1.
+ <p>
+ 原文:
+ Damage caused by direct exposure to fire
  <p>
  Damage: 1</div>
 </section>
@@ -347,7 +378,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="FIRE_TICK">
 <h3>FIRE_TICK</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="EntityDamageEvent.DamageCause.html" title="org.bukkit.event.entity中的枚举">EntityDamageEvent.DamageCause</a></span>&nbsp;<span class="element-name">FIRE_TICK</span></div>
-<div class="block">Damage caused due to burns caused by fire
+<div class="block">由于烧伤造成的伤害.
+ <p>
+ 伤害: 1.
+ <p>
+ 原文:
+ Damage caused due to burns caused by fire
  <p>
  Damage: 1</div>
 </section>
@@ -356,7 +392,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="MELTING">
 <h3>MELTING</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="EntityDamageEvent.DamageCause.html" title="org.bukkit.event.entity中的枚举">EntityDamageEvent.DamageCause</a></span>&nbsp;<span class="element-name">MELTING</span></div>
-<div class="block">Damage caused due to a snowman melting
+<div class="block">雪人由于融化受到的伤害.
+ <p>
+ 伤害: 1.
+ <p>
+ 原文:
+ Damage caused due to a snowman melting
  <p>
  Damage: 1</div>
 </section>
@@ -365,7 +406,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="LAVA">
 <h3>LAVA</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="EntityDamageEvent.DamageCause.html" title="org.bukkit.event.entity中的枚举">EntityDamageEvent.DamageCause</a></span>&nbsp;<span class="element-name">LAVA</span></div>
-<div class="block">Damage caused by direct exposure to lava
+<div class="block">直接暴露在熔浆受到的伤害.
+ <p>
+ 伤害: 4.
+ <p>
+ 原文:
+ Damage caused by direct exposure to lava
  <p>
  Damage: 4</div>
 </section>
@@ -374,7 +420,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="DROWNING">
 <h3>DROWNING</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="EntityDamageEvent.DamageCause.html" title="org.bukkit.event.entity中的枚举">EntityDamageEvent.DamageCause</a></span>&nbsp;<span class="element-name">DROWNING</span></div>
-<div class="block">Damage caused by running out of air while in water
+<div class="block">在水中耗尽空气受到的伤害.
+ <p>
+ 伤害: 2.
+ <p>
+ 原文:
+ Damage caused by running out of air while in water
  <p>
  Damage: 2</div>
 </section>
@@ -383,7 +434,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="BLOCK_EXPLOSION">
 <h3>BLOCK_EXPLOSION</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="EntityDamageEvent.DamageCause.html" title="org.bukkit.event.entity中的枚举">EntityDamageEvent.DamageCause</a></span>&nbsp;<span class="element-name">BLOCK_EXPLOSION</span></div>
-<div class="block">Damage caused by being in the area when a block explodes.
+<div class="block">在爆炸范围内受到的伤害.
+ <p>
+ 伤害: 动态改变.
+ <p>
+ 原文:
+ Damage caused by being in the area when a block explodes.
  <p>
  Damage: variable</div>
 </section>
@@ -392,7 +448,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="ENTITY_EXPLOSION">
 <h3>ENTITY_EXPLOSION</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="EntityDamageEvent.DamageCause.html" title="org.bukkit.event.entity中的枚举">EntityDamageEvent.DamageCause</a></span>&nbsp;<span class="element-name">ENTITY_EXPLOSION</span></div>
-<div class="block">Damage caused by being in the area when an entity, such as a
+<div class="block">在实体爆炸范围内受到的伤害,例如苦力怕的爆炸.
+ <p>
+ 伤害: 动态改变.
+ <p>
+ 原文:
+ Damage caused by being in the area when an entity, such as a
  Creeper, explodes.
  <p>
  Damage: variable</div>
@@ -402,7 +463,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="VOID">
 <h3>VOID</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="EntityDamageEvent.DamageCause.html" title="org.bukkit.event.entity中的枚举">EntityDamageEvent.DamageCause</a></span>&nbsp;<span class="element-name">VOID</span></div>
-<div class="block">Damage caused by falling into the void
+<div class="block">掉入虚空受到的伤害.
+ <p>
+ 伤害:  每半秒4点.
+ <p>
+ 原文:
+ Damage caused by falling into the void
  <p>
  Damage: 4 for players</div>
 </section>
@@ -411,7 +477,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="LIGHTNING">
 <h3>LIGHTNING</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="EntityDamageEvent.DamageCause.html" title="org.bukkit.event.entity中的枚举">EntityDamageEvent.DamageCause</a></span>&nbsp;<span class="element-name">LIGHTNING</span></div>
-<div class="block">Damage caused by being struck by lightning
+<div class="block">雷击造成的伤害.
+ <p>
+ 伤害: 5.
+ <p>
+ 原文:
+ Damage caused by being struck by lightning
  <p>
  Damage: 5</div>
 </section>
@@ -432,7 +503,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="STARVATION">
 <h3>STARVATION</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="EntityDamageEvent.DamageCause.html" title="org.bukkit.event.entity中的枚举">EntityDamageEvent.DamageCause</a></span>&nbsp;<span class="element-name">STARVATION</span></div>
-<div class="block">Damage caused by starving due to having an empty hunger bar
+<div class="block">当饥饿值为空时受到的伤害.
+ <p>
+ 伤害: 1.
+ <p>
+ 原文:
+ Damage caused by starving due to having an empty hunger bar
  <p>
  Damage: 1</div>
 </section>
@@ -441,7 +517,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="POISON">
 <h3>POISON</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="EntityDamageEvent.DamageCause.html" title="org.bukkit.event.entity中的枚举">EntityDamageEvent.DamageCause</a></span>&nbsp;<span class="element-name">POISON</span></div>
-<div class="block">Damage caused due to an ongoing poison effect
+<div class="block">由于持续性毒药造成的伤害.
+ <p>
+ 伤害: 1.
+ <p>
+ 原文:
+ Damage caused due to an ongoing poison effect
  <p>
  Damage: 1</div>
 </section>
@@ -450,7 +531,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="MAGIC">
 <h3>MAGIC</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="EntityDamageEvent.DamageCause.html" title="org.bukkit.event.entity中的枚举">EntityDamageEvent.DamageCause</a></span>&nbsp;<span class="element-name">MAGIC</span></div>
-<div class="block">Damage caused by being hit by a damage potion or spell
+<div class="block">伤害药水或魔法造成的伤害.
+ <p>
+ 伤害: 动态改变.
+ <p>
+ 原文:
+ Damage caused by being hit by a damage potion or spell
  <p>
  Damage: variable</div>
 </section>
@@ -459,14 +545,24 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="WITHER">
 <h3>WITHER</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="EntityDamageEvent.DamageCause.html" title="org.bukkit.event.entity中的枚举">EntityDamageEvent.DamageCause</a></span>&nbsp;<span class="element-name">WITHER</span></div>
-<div class="block">Damage caused by Wither potion effect</div>
+<div class="block">凋零效果造成的伤害.
+ <p>
+ 原文:
+ Damage caused by Wither potion effect</div>
 </section>
 </li>
 <li>
 <section class="detail" id="FALLING_BLOCK">
 <h3>FALLING_BLOCK</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="EntityDamageEvent.DamageCause.html" title="org.bukkit.event.entity中的枚举">EntityDamageEvent.DamageCause</a></span>&nbsp;<span class="element-name">FALLING_BLOCK</span></div>
-<div class="block">Damage caused by being hit by a falling block which deals damage
+<div class="block">被掉落中的方块砸中造成的伤害
+ <p>
+ <b>注意:</b> 不是所有方块都会造成伤害.
+ <p>
+ 伤害: 动态改变.
+ <p>
+ 原文:
+ Damage caused by being hit by a falling block which deals damage
  <p>
  <b>Note:</b> Not every block deals damage
  <p>
@@ -477,7 +573,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="THORNS">
 <h3>THORNS</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="EntityDamageEvent.DamageCause.html" title="org.bukkit.event.entity中的枚举">EntityDamageEvent.DamageCause</a></span>&nbsp;<span class="element-name">THORNS</span></div>
-<div class="block">Damage caused in retaliation to another attack by the Thorns
+<div class="block">被荆棘反弹的攻击所造成的伤害(反伤).
+ <p>
+ 伤害: 1-4(荆棘).
+ <p>
+ 原文:
+ Damage caused in retaliation to another attack by the Thorns
  enchantment.
  <p>
  Damage: 1-4 (Thorns)</div>
@@ -487,7 +588,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="DRAGON_BREATH">
 <h3>DRAGON_BREATH</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="EntityDamageEvent.DamageCause.html" title="org.bukkit.event.entity中的枚举">EntityDamageEvent.DamageCause</a></span>&nbsp;<span class="element-name">DRAGON_BREATH</span></div>
-<div class="block">Damage caused by a dragon breathing fire.
+<div class="block">龙息造成的伤害 (恶龙咆哮~).
+ <p>
+ 伤害: 动态改变.
+ <p>
+ 原文:
+ Damage caused by a dragon breathing fire.
  <p>
  Damage: variable</div>
 </section>
@@ -496,7 +602,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="CUSTOM">
 <h3>CUSTOM</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="EntityDamageEvent.DamageCause.html" title="org.bukkit.event.entity中的枚举">EntityDamageEvent.DamageCause</a></span>&nbsp;<span class="element-name">CUSTOM</span></div>
-<div class="block">Custom damage.
+<div class="block">自定义伤害.
+ <p>
+ 伤害: 动态改变.
+ <p>
+ 原文:
+ Custom damage.
  <p>
  Damage: variable</div>
 </section>
@@ -505,7 +616,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="FLY_INTO_WALL">
 <h3>FLY_INTO_WALL</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="EntityDamageEvent.DamageCause.html" title="org.bukkit.event.entity中的枚举">EntityDamageEvent.DamageCause</a></span>&nbsp;<span class="element-name">FLY_INTO_WALL</span></div>
-<div class="block">Damage caused when an entity runs into a wall.
+<div class="block">实体撞墙时造成的伤害.
+ <p>
+ 伤害: 动态改变.
+ <p>
+ 原文:
+ Damage caused when an entity runs into a wall.
  <p>
  Damage: variable</div>
 </section>
@@ -514,7 +630,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="HOT_FLOOR">
 <h3>HOT_FLOOR</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="EntityDamageEvent.DamageCause.html" title="org.bukkit.event.entity中的枚举">EntityDamageEvent.DamageCause</a></span>&nbsp;<span class="element-name">HOT_FLOOR</span></div>
-<div class="block">Damage caused when an entity steps on <a href="../../Material.html#MAGMA_BLOCK"><code>Material.MAGMA_BLOCK</code></a>.
+<div class="block">实体站在<a href="../../Material.html#MAGMA_BLOCK"><code>Material.MAGMA_BLOCK</code></a>上时收到的伤害.
+ <p>
+ 伤害: 1.
+ <p>
+ 原文:
+ Damage caused when an entity steps on <a href="../../Material.html#MAGMA_BLOCK"><code>Material.MAGMA_BLOCK</code></a>.
  <p>
  Damage: 1</div>
 </section>
@@ -523,7 +644,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="CRAMMING">
 <h3>CRAMMING</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="EntityDamageEvent.DamageCause.html" title="org.bukkit.event.entity中的枚举">EntityDamageEvent.DamageCause</a></span>&nbsp;<span class="element-name">CRAMMING</span></div>
-<div class="block">Damage caused when an entity is colliding with too many entities due
+<div class="block">由于游戏规则:maxEntityCramming,一个实体和许多其他实体挤压受到的伤害.
+ <p>
+ 伤害: 6.
+ <p>
+ 原文:
+ Damage caused when an entity is colliding with too many entities due
  to the maxEntityCramming game rule.
  <p>
  Damage: 6</div>
@@ -533,7 +659,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="DRYOUT">
 <h3>DRYOUT</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="EntityDamageEvent.DamageCause.html" title="org.bukkit.event.entity中的枚举">EntityDamageEvent.DamageCause</a></span>&nbsp;<span class="element-name">DRYOUT</span></div>
-<div class="block">Damage caused when an entity that should be in water is not.
+<div class="block">实体(例如:鱼)不在水中时受到的伤害.
+ <p>
+ 伤害: 1.
+ <p>
+ 原文:
+ Damage caused when an entity that should be in water is not.
  <p>
  Damage: 1</div>
 </section>
@@ -542,7 +673,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="FREEZE">
 <h3>FREEZE</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="EntityDamageEvent.DamageCause.html" title="org.bukkit.event.entity中的枚举">EntityDamageEvent.DamageCause</a></span>&nbsp;<span class="element-name">FREEZE</span></div>
-<div class="block">Damage caused from freezing.
+<div class="block">冻伤引起的伤害.
+ <p>
+ 伤害: 1 或 5.
+ <p>
+ 原文:
+ Damage caused from freezing.
  <p>
  Damage: 1 or 5</div>
 </section>
@@ -551,7 +687,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="SONIC_BOOM">
 <h3>SONIC_BOOM</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="EntityDamageEvent.DamageCause.html" title="org.bukkit.event.entity中的枚举">EntityDamageEvent.DamageCause</a></span>&nbsp;<span class="element-name">SONIC_BOOM</span></div>
-<div class="block">Damage caused by the Sonic Boom attack from <a href="../../entity/Warden.html" title="org.bukkit.entity中的接口"><code>Warden</code></a>
+<div class="block">来自<a href="../../entity/Warden.html" title="org.bukkit.entity中的接口"><code>Warden</code></a>音波攻击造成的伤害.
+ <p>
+ 伤害: 10.
+ <p>
+ 原文:
+ Damage caused by the Sonic Boom attack from <a href="../../entity/Warden.html" title="org.bukkit.entity中的接口"><code>Warden</code></a>
  <p>
  Damage: 10</div>
 </section>
