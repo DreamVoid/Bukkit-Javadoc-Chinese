@@ -133,8 +133,9 @@ loadScripts(document, 'script');</script>
  <a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a> <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html" title="java.lang中的类或接口" class="external-link">String</a>[]&nbsp;args)</span></div>
 <div class="block">执行给定的命令，成功时返回.
  <br>
- If false is returned, then the "usage" plugin.yml entry for this command
- (if defined) will be sent to the player.
+ 若返回假（false），则输出plugin.yml下所对应usage的内容返回至玩家聊天窗口（前提需要被定义）.
+ <br>
+ 译注：为假（false）输出一串例如：Usage: /gamemode [mode] [player]；如果为真（true）则不返回除方法内编写内容外任何内容.
  <p>
  原文:Executes the given command, returning its success.
  <br>
@@ -142,10 +143,10 @@ loadScripts(document, 'script');</script>
  (if defined) will be sent to the player.</div>
 <dl class="notes">
 <dt>参数:</dt>
-<dd><code>sender</code> - 命令执行的来源</dd>
+<dd><code>sender</code> - 命令执行的来源（可以是 player 可以是 console）</dd>
 <dd><code>command</code> - 被执行的命令</dd>
 <dd><code>label</code> - 使用的命令别名</dd>
-<dd><code>args</code> - 传递的命令参数</dd>
+<dd><code>args</code> - 传递的命令参数（不包含命令主体）</dd>
 <dt>返回:</dt>
 <dd>如果是合法的命令则为true，否则为false</dd>
 </dl>
