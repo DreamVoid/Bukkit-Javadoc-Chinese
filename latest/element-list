@@ -9,6 +9,7 @@ org.bukkit.block
 org.bukkit.block.banner
 org.bukkit.block.data
 org.bukkit.block.data.type
+org.bukkit.block.sign
 org.bukkit.block.structure
 org.bukkit.boss
 org.bukkit.command
@@ -39,11 +40,14 @@ org.bukkit.help
 org.bukkit.inventory
 org.bukkit.inventory.meta
 org.bukkit.inventory.meta.tags
+org.bukkit.inventory.meta.trim
+org.bukkit.inventory.recipe
 org.bukkit.loot
 org.bukkit.map
 org.bukkit.material
 org.bukkit.material.types
 org.bukkit.metadata
+org.bukkit.packs
 org.bukkit.permissions
 org.bukkit.persistence
 org.bukkit.plugin
