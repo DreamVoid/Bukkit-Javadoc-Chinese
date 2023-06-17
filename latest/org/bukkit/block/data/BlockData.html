@@ -118,7 +118,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Cloneable.h
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>int</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getLightEmission()" class="member-name-link">getLightEmission</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Get the amount of light emitted by this state when in the world.</div>
+<div class="block">获取此状态下的方块在世界中发出的光照强度。</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a> <a href="../../Material.html" title="org.bukkit中的枚举">Material</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getMaterial()" class="member-name-link">getMaterial</a>()</code></div>
@@ -128,47 +128,43 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Cloneable.h
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a> <a href="../PistonMoveReaction.html" title="org.bukkit.block中的枚举">PistonMoveReaction</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getPistonMoveReaction()" class="member-name-link">getPistonMoveReaction</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Returns the reaction of the block when moved by a piston</div>
+<div class="block">返回方块被活塞推动时的反应。</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a> <a href="../../Material.html" title="org.bukkit中的枚举">Material</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getPlacementMaterial()" class="member-name-link">getPlacementMaterial</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Gets the material that a player would use to place this block.</div>
+<div class="block">获取玩家放置此方块所使用的物品材质。</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a> <a href="../../SoundGroup.html" title="org.bukkit中的接口">SoundGroup</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getSoundGroup()" class="member-name-link">getSoundGroup</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Gets the block's <a href="../../SoundGroup.html" title="org.bukkit中的接口"><code>SoundGroup</code></a> which can be used to get its step
- sound, hit sound, and others.</div>
+<div class="block">获取方块的<a href="../../SoundGroup.html" title="org.bukkit中的接口"><code>SoundGroup</code></a>，可以用它来获取其行走声音、击打声音等其它声音。</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#isFaceSturdy(org.bukkit.block.BlockFace,org.bukkit.block.BlockSupport)" class="member-name-link">isFaceSturdy</a><wbr>(<a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a> <a href="../BlockFace.html" title="org.bukkit.block中的枚举">BlockFace</a>&nbsp;face,
  <a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a> <a href="../BlockSupport.html" title="org.bukkit.block中的枚举">BlockSupport</a>&nbsp;support)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Checks if a state's <a href="../BlockFace.html" title="org.bukkit.block中的枚举"><code>BlockFace</code></a> is capable of providing a given level
- of <a href="../BlockSupport.html" title="org.bukkit.block中的枚举"><code>BlockSupport</code></a> for neighbouring block states.</div>
+<div class="block">检查状态的 <a href="../BlockFace.html" title="org.bukkit.block中的枚举"><code>BlockFace</code></a> 是否能够为相邻的方块状态提供特定级别的 <a href="../BlockSupport.html" title="org.bukkit.block中的枚举"><code>BlockSupport</code></a>。</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#isOccluding()" class="member-name-link">isOccluding</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Check whether or not this state will occlude other blocks.</div>
+<div class="block">检查此状态下的方块是否会遮挡其他方块。</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#isPreferredTool(org.bukkit.inventory.ItemStack)" class="member-name-link">isPreferredTool</a><wbr>(<a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a> <a href="../../inventory/ItemStack.html" title="org.bukkit.inventory中的类">ItemStack</a>&nbsp;tool)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Returns if the given item is a preferred choice to break this Block.</div>
+<div class="block">返回给定物品是否为破坏此方块的首选选择。</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#isSupported(org.bukkit.block.Block)" class="member-name-link">isSupported</a><wbr>(<a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a> <a href="../Block.html" title="org.bukkit.block中的接口">Block</a>&nbsp;block)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Checks if this state would be properly supported if it were placed at
- the given <a href="../Block.html" title="org.bukkit.block中的接口"><code>Block</code></a>.</div>
+<div class="block">检查如果此状态下的方块放置在给定的<a href="../Block.html" title="org.bukkit.block中的接口"><code>方块</code></a>上，它是否会被正常支撑。</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#isSupported(org.bukkit.Location)" class="member-name-link">isSupported</a><wbr>(<a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a> <a href="../../Location.html" title="org.bukkit中的类">Location</a>&nbsp;location)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Checks if this state would be properly supported if it were placed at
- the block at the given <a href="../../Location.html" title="org.bukkit中的类"><code>Location</code></a>.</div>
+<div class="block">检查如果此状态下的方块放置在给定的 <a href="../../Location.html" title="org.bukkit中的类"><code>Location</code></a> 的方块上，它是否会被正常支撑。</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#matches(org.bukkit.block.data.BlockData)" class="member-name-link">matches</a><wbr>(<a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/Nullable.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@Nullable</a> <a href="BlockData.html" title="org.bukkit.block.data中的接口">BlockData</a>&nbsp;data)</code></div>
@@ -183,18 +179,17 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Cloneable.h
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#mirror(org.bukkit.block.structure.Mirror)" class="member-name-link">mirror</a><wbr>(<a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a> <a href="../structure/Mirror.html" title="org.bukkit.block.structure中的枚举">Mirror</a>&nbsp;mirror)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Mirrors this blockdata using the specified <a href="../structure/Mirror.html" title="org.bukkit.block.structure中的枚举"><code>Mirror</code></a>.</div>
+<div class="block">使用指定的 <a href="../structure/Mirror.html" title="org.bukkit.block.structure中的枚举"><code>Mirror</code></a> 镜像此方块数据。</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#requiresCorrectToolForDrops()" class="member-name-link">requiresCorrectToolForDrops</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Check whether or not this state requires a specific item to be used to drop
- items when broken.</div>
+<div class="block">检查是否需要使用特定物品才能掉落其物品。</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#rotate(org.bukkit.block.structure.StructureRotation)" class="member-name-link">rotate</a><wbr>(<a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a> <a href="../structure/StructureRotation.html" title="org.bukkit.block.structure中的枚举">StructureRotation</a>&nbsp;rotation)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Rotates this blockdata by the specified <a href="../structure/StructureRotation.html" title="org.bukkit.block.structure中的枚举"><code>StructureRotation</code></a>.</div>
+<div class="block">使用指定的 <a href="../structure/StructureRotation.html" title="org.bukkit.block.structure中的枚举"><code>StructureRotation</code></a> 旋转此方块数据。</div>
 </div>
 </div>
 </div>
@@ -288,7 +283,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Cloneable.h
 <dl class="notes">
 <dt>参数:</dt>
 <dd><code>hideUnspecified</code> - 为 true 时未指定的数据值将会被省略,
- 为 false 时未指定的数据值也会被编入字符串, 与 <a href="#getAsString()"><code>getAsString()</code></a> 方法的执行结果一样.</dd>
+                        为 false 时未指定的数据值也会被编入字符串, 与 <a href="#getAsString()"><code>getAsString()</code></a> 方法的执行结果一样.</dd>
 <dt>返回:</dt>
 <dd>关于此方块的序列化数据字符串</dd>
 </dl>
@@ -379,11 +374,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Cloneable.h
 <h3>getSoundGroup</h3>
 <div class="member-signature"><span class="annotations"><a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a>
 </span><span class="return-type"><a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a> <a href="../../SoundGroup.html" title="org.bukkit中的接口">SoundGroup</a></span>&nbsp;<span class="element-name">getSoundGroup</span>()</div>
-<div class="block">Gets the block's <a href="../../SoundGroup.html" title="org.bukkit中的接口"><code>SoundGroup</code></a> which can be used to get its step
+<div class="block">获取方块的<a href="../../SoundGroup.html" title="org.bukkit中的接口"><code>SoundGroup</code></a>，可以用它来获取其行走声音、击打声音等其它声音。
+ <p>
+ 原文:
+ Gets the block's <a href="../../SoundGroup.html" title="org.bukkit中的接口"><code>SoundGroup</code></a> which can be used to get its step
  sound, hit sound, and others.</div>
 <dl class="notes">
 <dt>返回:</dt>
-<dd>the sound effect group</dd>
+<dd>音效组</dd>
 </dl>
 </section>
 </li>
@@ -391,10 +389,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Cloneable.h
 <section class="detail" id="getLightEmission()">
 <h3>getLightEmission</h3>
 <div class="member-signature"><span class="return-type">int</span>&nbsp;<span class="element-name">getLightEmission</span>()</div>
-<div class="block">Get the amount of light emitted by this state when in the world.</div>
+<div class="block">获取此状态下的方块在世界中发出的光照强度。
+ <p>
+ 原文:
+ Get the amount of light emitted by this state when in the world.</div>
 <dl class="notes">
 <dt>返回:</dt>
-<dd>the light emission</dd>
+<dd>光照强度</dd>
 </dl>
 </section>
 </li>
@@ -402,14 +403,19 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Cloneable.h
 <section class="detail" id="isOccluding()">
 <h3>isOccluding</h3>
 <div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">isOccluding</span>()</div>
-<div class="block">Check whether or not this state will occlude other blocks.
+<div class="block">检查此状态下的方块是否会遮挡其他方块。
+ <p>
+ 方块状态遮挡会影响其他方块的视觉特性（例如，如果其下方有遮挡状态，则树叶和湿海绵将不会产生滴水颗粒），或光能否通过它。
+ <p>
+ 原文:
+ Check whether or not this state will occlude other blocks.
  <p>
  Block state occlusion affects visual features of other blocks (e.g. leaves and
  wet sponges will not spawn dripping water particles if an occluding state is
  below it), or whether light will pass through it.</div>
 <dl class="notes">
 <dt>返回:</dt>
-<dd>true if occluding, false otherwise</dd>
+<dd>如果会遮挡其它方块为true, 否则为 false</dd>
 </dl>
 </section>
 </li>
@@ -417,13 +423,15 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Cloneable.h
 <section class="detail" id="requiresCorrectToolForDrops()">
 <h3>requiresCorrectToolForDrops</h3>
 <div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">requiresCorrectToolForDrops</span>()</div>
-<div class="block">Check whether or not this state requires a specific item to be used to drop
+<div class="block">检查是否需要使用特定物品才能掉落其物品。例如，钻石矿石需要使用铁镐才能采集，否则使用木镐或石镐无法掉落钻石。
+ <p>
+ 原文:
+ Check whether or not this state requires a specific item to be used to drop
  items when broken. For example, diamond ore requires an iron pickaxe and will
  not drop diamonds when broken with a wooden or stone pickaxe.</div>
 <dl class="notes">
 <dt>返回:</dt>
-<dd>true if a more specific item is required for drops, false if any item
- (or an empty hand) will drop items</dd>
+<dd>如果需要一种或多种特定物品才能掉落物品则为true, 如果任意物品（或空手）即可掉落物品则为 false</dd>
 </dl>
 </section>
 </li>
@@ -432,15 +440,20 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Cloneable.h
 <h3>isPreferredTool</h3>
 <div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">isPreferredTool</span><wbr><span class="parameters">(<a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a>
  <a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a> <a href="../../inventory/ItemStack.html" title="org.bukkit.inventory中的类">ItemStack</a>&nbsp;tool)</span></div>
-<div class="block">Returns if the given item is a preferred choice to break this Block.
-
+<div class="block">返回给定物品是否为破坏此方块的首选选择。
+ <p>
+ 在某些情况下，这将决定方块是否掉落任何物品或额外的战利品。
+ <p>
+ 原文:
+ Returns if the given item is a preferred choice to break this Block.
+ <p>
  In some cases this determines if a block will drop anything or extra
  loot.</div>
 <dl class="notes">
 <dt>参数:</dt>
-<dd><code>tool</code> - The tool or item used for breaking this block</dd>
+<dd><code>tool</code> - 用于破坏此方块的工具或物品</dd>
 <dt>返回:</dt>
-<dd>true if the tool is preferred for breaking this block.</dd>
+<dd>如果此工具是破坏此方块的首选选择则为 true.</dd>
 </dl>
 </section>
 </li>
@@ -449,10 +462,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Cloneable.h
 <h3>getPistonMoveReaction</h3>
 <div class="member-signature"><span class="annotations"><a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a>
 </span><span class="return-type"><a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a> <a href="../PistonMoveReaction.html" title="org.bukkit.block中的枚举">PistonMoveReaction</a></span>&nbsp;<span class="element-name">getPistonMoveReaction</span>()</div>
-<div class="block">Returns the reaction of the block when moved by a piston</div>
+<div class="block">返回方块被活塞推动时的反应。
+ <p>
+ 原文:
+ Returns the reaction of the block when moved by a piston</div>
 <dl class="notes">
 <dt>返回:</dt>
-<dd>reaction</dd>
+<dd>reaction 反应</dd>
 </dl>
 </section>
 </li>
@@ -461,17 +477,21 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Cloneable.h
 <h3>isSupported</h3>
 <div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">isSupported</span><wbr><span class="parameters">(<a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a>
  <a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a> <a href="../Block.html" title="org.bukkit.block中的接口">Block</a>&nbsp;block)</span></div>
-<div class="block">Checks if this state would be properly supported if it were placed at
+<div class="block">检查如果此状态下的方块放置在给定的<a href="../Block.html" title="org.bukkit.block中的接口"><code>方块</code></a>上，它是否会被正常支撑。
+ <p>
+ 例如，这可能有用来检查壁式火炬是否能够在其相邻的方块状态上存活。
+ <p>
+ 原文:
+ Checks if this state would be properly supported if it were placed at
  the given <a href="../Block.html" title="org.bukkit.block中的接口"><code>Block</code></a>.
  <p>
  This may be useful, for instance, to check whether or not a wall torch is
  capable of surviving on its neighbouring block states.</div>
 <dl class="notes">
 <dt>参数:</dt>
-<dd><code>block</code> - the block position at which the state would be placed</dd>
+<dd><code>block</code> - 此方块要放置在哪个方块上</dd>
 <dt>返回:</dt>
-<dd>true if the block is supported, false if this state would not survive
- the world conditions</dd>
+<dd>如果此方块可被支撑则为 true, 如果此状态下的方块无法在此世界的状况下留存则为 false</dd>
 </dl>
 </section>
 </li>
@@ -480,17 +500,21 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Cloneable.h
 <h3>isSupported</h3>
 <div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">isSupported</span><wbr><span class="parameters">(<a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a>
  <a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a> <a href="../../Location.html" title="org.bukkit中的类">Location</a>&nbsp;location)</span></div>
-<div class="block">Checks if this state would be properly supported if it were placed at
+<div class="block">检查如果此状态下的方块放置在给定的 <a href="../../Location.html" title="org.bukkit中的类"><code>Location</code></a> 的方块上，它是否会被正常支撑。
+ <p>
+ 例如，这可能有用来检查壁式火炬是否能够在其相邻的方块状态上存活。
+ <p>
+ 原文:
+ Checks if this state would be properly supported if it were placed at
  the block at the given <a href="../../Location.html" title="org.bukkit中的类"><code>Location</code></a>.
  <p>
  This may be useful, for instance, to check whether or not a wall torch is
  capable of surviving on its neighbouring block states.</div>
 <dl class="notes">
 <dt>参数:</dt>
-<dd><code>location</code> - the location at which the state would be placed</dd>
+<dd><code>location</code> - 此方块要放置在哪个位置上</dd>
 <dt>返回:</dt>
-<dd>true if the block is supported, false if this state would not survive
- the world conditions</dd>
+<dd>如果此方块可被支撑则为 true, 如果此状态下的方块无法在此世界的状况下留存则为 false</dd>
 </dl>
 </section>
 </li>
@@ -501,7 +525,12 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Cloneable.h
  <a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a> <a href="../BlockFace.html" title="org.bukkit.block中的枚举">BlockFace</a>&nbsp;face,
  <a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a>
  <a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a> <a href="../BlockSupport.html" title="org.bukkit.block中的枚举">BlockSupport</a>&nbsp;support)</span></div>
-<div class="block">Checks if a state's <a href="../BlockFace.html" title="org.bukkit.block中的枚举"><code>BlockFace</code></a> is capable of providing a given level
+<div class="block">检查状态的 <a href="../BlockFace.html" title="org.bukkit.block中的枚举"><code>BlockFace</code></a> 是否能够为相邻的方块状态提供特定级别的 <a href="../BlockSupport.html" title="org.bukkit.block中的枚举"><code>BlockSupport</code></a>。
+ <p>
+ 任何给定状态都可以根据其状态支持零、一个或多个支撑级别。一个常见的例子是墙只能在上表面中心支撑火把，而草方块则在所有表面支持所有支撑级别。
+ <p>
+ 原文:
+ Checks if a state's <a href="../BlockFace.html" title="org.bukkit.block中的枚举"><code>BlockFace</code></a> is capable of providing a given level
  of <a href="../BlockSupport.html" title="org.bukkit.block中的枚举"><code>BlockSupport</code></a> for neighbouring block states.
  <p>
  Any given state may support either none, one, or more than one level of block
@@ -510,10 +539,10 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Cloneable.h
  support all levels of block support on all block faces.</div>
 <dl class="notes">
 <dt>参数:</dt>
-<dd><code>face</code> - the face to check</dd>
-<dd><code>support</code> - the possible support level</dd>
+<dd><code>face</code> - 要检测的面</dd>
+<dd><code>support</code> - 可能的支撑级别</dd>
 <dt>返回:</dt>
-<dd>true if the face is sturdy and can support a block, false otherwise</dd>
+<dd>如果这一面足够牢固并可支撑此方块则为 true, 否则为 false</dd>
 </dl>
 </section>
 </li>
@@ -522,11 +551,22 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Cloneable.h
 <h3>getPlacementMaterial</h3>
 <div class="member-signature"><span class="annotations"><a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a>
 </span><span class="return-type"><a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a> <a href="../../Material.html" title="org.bukkit中的枚举">Material</a></span>&nbsp;<span class="element-name">getPlacementMaterial</span>()</div>
-<div class="block">Gets the material that a player would use to place this block.
+<div class="block">获取玩家放置此方块所使用的物品材质。
+ <p>
+ 对于大多数方块，这与 <a href="#getMaterial()"><code>getMaterial()</code></a> 相同，但有些方块有不同的材质用于放置它们。
+ <p>
+ 例如：
+ <pre>
+ <a href="../../Material.html#REDSTONE_WIRE"><code>Material.REDSTONE_WIRE</code></a> -> <a href="../../Material.html#REDSTONE"><code>Material.REDSTONE</code></a>
+ <a href="../../Material.html#CARROTS"><code>Material.CARROTS</code></a> -> <a href="../../Material.html#CARROT"><code>Material.CARROT</code></a>
+ </pre>
+ <p>
+ 原文:
+ Gets the material that a player would use to place this block.
  <p>
  For most blocks this is the same as <a href="#getMaterial()"><code>getMaterial()</code></a> but some blocks
  have different materials used to place them.
-
+ <p>
  For example:
  <pre>
  <a href="../../Material.html#REDSTONE_WIRE"><code>Material.REDSTONE_WIRE</code></a> -> <a href="../../Material.html#REDSTONE"><code>Material.REDSTONE</code></a>
@@ -534,7 +574,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Cloneable.h
  </pre></div>
 <dl class="notes">
 <dt>返回:</dt>
-<dd>placement material</dd>
+<dd>放置此方块所使用的物品材质</dd>
 </dl>
 </section>
 </li>
@@ -543,12 +583,17 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Cloneable.h
 <h3>rotate</h3>
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">rotate</span><wbr><span class="parameters">(<a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a>
  <a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a> <a href="../structure/StructureRotation.html" title="org.bukkit.block.structure中的枚举">StructureRotation</a>&nbsp;rotation)</span></div>
-<div class="block">Rotates this blockdata by the specified <a href="../structure/StructureRotation.html" title="org.bukkit.block.structure中的枚举"><code>StructureRotation</code></a>.
+<div class="block">使用指定的 <a href="../structure/StructureRotation.html" title="org.bukkit.block.structure中的枚举"><code>StructureRotation</code></a> 旋转此方块数据。
+ <p>
+ 这对于没有可旋转状态的方块没有影响。
+ <p>
+ 原文:
+ Rotates this blockdata by the specified <a href="../structure/StructureRotation.html" title="org.bukkit.block.structure中的枚举"><code>StructureRotation</code></a>.
  <p>
  This has no effect on blocks that do not have any rotatable states.</div>
 <dl class="notes">
 <dt>参数:</dt>
-<dd><code>rotation</code> - the rotation</dd>
+<dd><code>rotation</code> - 旋转角度</dd>
 </dl>
 </section>
 </li>
@@ -557,12 +602,17 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Cloneable.h
 <h3>mirror</h3>
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">mirror</span><wbr><span class="parameters">(<a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a>
  <a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a> <a href="../structure/Mirror.html" title="org.bukkit.block.structure中的枚举">Mirror</a>&nbsp;mirror)</span></div>
-<div class="block">Mirrors this blockdata using the specified <a href="../structure/Mirror.html" title="org.bukkit.block.structure中的枚举"><code>Mirror</code></a>.
+<div class="block">使用指定的 <a href="../structure/Mirror.html" title="org.bukkit.block.structure中的枚举"><code>Mirror</code></a> 镜像此方块数据。
+ <p>
+ 这对于没有可镜像状态的方块没有影响。
+ <p>
+ 原文:
+ Mirrors this blockdata using the specified <a href="../structure/Mirror.html" title="org.bukkit.block.structure中的枚举"><code>Mirror</code></a>.
  <p>
  This has no effect on blocks that do not have any mirrorable states.</div>
 <dl class="notes">
 <dt>参数:</dt>
-<dd><code>mirror</code> - the mirror</dd>
+<dd><code>mirror</code> - 镜像</dd>
 </dl>
 </section>
 </li>

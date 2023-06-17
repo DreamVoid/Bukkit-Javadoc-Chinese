@@ -80,11 +80,10 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">ChiseledBookshelf</span><span class="extends-implements">
 extends <a href="../Directional.html" title="org.bukkit.block.data中的接口">Directional</a></span></div>
-<div class="block">Interface to the 'slot_0_occupied', 'slow_1_occupied' ... 'slot_5_occupied'
- flags on a bookshelf which indicate which slots are occupied rendered on the
- outside.
+<div class="block">表示书架上外部可见的哪些物品槽已被占用的接口，其标记名为“slot_0_occupied”、“slot_1_occupied”等。
  <br>
- Block may have 0, 1... <a href="#getMaximumOccupiedSlots()"><code>getMaximumOccupiedSlots()</code></a>-1 occupied slots.</div>
+ 一个方块可能没有任何槽被占用，也可能最多只有<a href="#getMaximumOccupiedSlots()"><code>getMaximumOccupiedSlots()</code></a> - 1个槽被占用。
+ 该接口提供了方法来获取当前已占用的槽数量和位置信息。</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -102,23 +101,23 @@ extends <a href="../Directional.html" title="org.bukkit.block.data中的接口">
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>int</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getMaximumOccupiedSlots()" class="member-name-link">getMaximumOccupiedSlots</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Get the maximum amount of slots on this block.</div>
+<div class="block">获取此方块上的最大物品槽数量.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a> <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html" title="java.util中的类或接口" class="external-link">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html" title="java.lang中的类或接口" class="external-link">Integer</a>&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getOccupiedSlots()" class="member-name-link">getOccupiedSlots</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Get the indexes of all the occupied slots present on this block.</div>
+<div class="block">获取此方块上所有已占用槽位的索引.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#isSlotOccupied(int)" class="member-name-link">isSlotOccupied</a><wbr>(int&nbsp;slot)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Checks if the following slot is occupied.</div>
+<div class="block">检查下一个槽位是否被占用.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setSlotOccupied(int,boolean)" class="member-name-link">setSlotOccupied</a><wbr>(int&nbsp;slot,
  boolean&nbsp;occupied)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Sets whether the following slot is occupied.</div>
+<div class="block">设置下一个槽位是否被占用.</div>
 </div>
 </div>
 </div>
@@ -144,12 +143,15 @@ extends <a href="../Directional.html" title="org.bukkit.block.data中的接口">
 <section class="detail" id="isSlotOccupied(int)">
 <h3>isSlotOccupied</h3>
 <div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">isSlotOccupied</span><wbr><span class="parameters">(int&nbsp;slot)</span></div>
-<div class="block">Checks if the following slot is occupied.</div>
+<div class="block">检查下一个槽位是否被占用.
+ <p>
+ 原文：
+ Checks if the following slot is occupied.</div>
 <dl class="notes">
 <dt>参数:</dt>
-<dd><code>slot</code> - to check</dd>
+<dd><code>slot</code> - 要检测的槽位</dd>
 <dt>返回:</dt>
-<dd>if slot is occupied</dd>
+<dd>槽位是否被占用</dd>
 </dl>
 </section>
 </li>
@@ -158,11 +160,14 @@ extends <a href="../Directional.html" title="org.bukkit.block.data中的接口">
 <h3>setSlotOccupied</h3>
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">setSlotOccupied</span><wbr><span class="parameters">(int&nbsp;slot,
  boolean&nbsp;occupied)</span></div>
-<div class="block">Sets whether the following slot is occupied.</div>
+<div class="block">设置下一个槽位是否被占用.
+ <p>
+ 原文：
+ Sets whether the following slot is occupied.</div>
 <dl class="notes">
 <dt>参数:</dt>
-<dd><code>slot</code> - to set</dd>
-<dd><code>occupied</code> - book</dd>
+<dd><code>slot</code> - 要检测的槽位</dd>
+<dd><code>occupied</code> - 槽位是否被占用</dd>
 </dl>
 </section>
 </li>
@@ -171,10 +176,13 @@ extends <a href="../Directional.html" title="org.bukkit.block.data中的接口">
 <h3>getOccupiedSlots</h3>
 <div class="member-signature"><span class="annotations"><a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a>
 </span><span class="return-type"><a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a> <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html" title="java.util中的类或接口" class="external-link">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html" title="java.lang中的类或接口" class="external-link">Integer</a>&gt;</span>&nbsp;<span class="element-name">getOccupiedSlots</span>()</div>
-<div class="block">Get the indexes of all the occupied slots present on this block.</div>
+<div class="block">获取此方块上所有已占用槽位的索引.
+ <p>
+ 原文：
+ Get the indexes of all the occupied slots present on this block.</div>
 <dl class="notes">
 <dt>返回:</dt>
-<dd>set of all occupied slots</dd>
+<dd>所有已占用槽位的索引</dd>
 </dl>
 </section>
 </li>
@@ -182,10 +190,13 @@ extends <a href="../Directional.html" title="org.bukkit.block.data中的接口">
 <section class="detail" id="getMaximumOccupiedSlots()">
 <h3>getMaximumOccupiedSlots</h3>
 <div class="member-signature"><span class="return-type">int</span>&nbsp;<span class="element-name">getMaximumOccupiedSlots</span>()</div>
-<div class="block">Get the maximum amount of slots on this block.</div>
+<div class="block">获取此方块上的最大物品槽数量.
+ <p>
+ 原文：
+ Get the maximum amount of slots on this block.</div>
 <dl class="notes">
 <dt>返回:</dt>
-<dd>maximum occupied slots count</dd>
+<dd>最大物品槽数量</dd>
 </dl>
 </section>
 </li>
