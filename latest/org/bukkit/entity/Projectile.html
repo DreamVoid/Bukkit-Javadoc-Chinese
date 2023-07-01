@@ -84,7 +84,10 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">Projectile</span><span class="extends-implements">
 extends <a href="Entity.html" title="org.bukkit.entity中的接口">Entity</a></span></div>
-<div class="block">Represents a shootable entity.</div>
+<div class="block">表示可被射击实体的概念
+ <p>
+ 原文：
+ Represents a shootable entity.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -111,23 +114,22 @@ extends <a href="Entity.html" title="org.bukkit.entity中的接口">Entity</a></
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#doesBounce()" class="member-name-link">doesBounce</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Determine if this projectile should bounce or not when it hits.</div>
+<div class="block">判断该抛射物在击中物体时是否应该弹跳.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/Nullable.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@Nullable</a> <a href="../projectiles/ProjectileSource.html" title="org.bukkit.projectiles中的接口">ProjectileSource</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getShooter()" class="member-name-link">getShooter</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Retrieve the shooter of this projectile.</div>
+<div class="block">获取该抛射物的发射者.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setBounce(boolean)" class="member-name-link">setBounce</a><wbr>(boolean&nbsp;doesBounce)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Set whether or not this projectile should bounce or not when it hits
- something.</div>
+<div class="block">设置该抛射物在击中物体时是否应该弹跳.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setShooter(org.bukkit.projectiles.ProjectileSource)" class="member-name-link">setShooter</a><wbr>(<a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/Nullable.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@Nullable</a> <a href="../projectiles/ProjectileSource.html" title="org.bukkit.projectiles中的接口">ProjectileSource</a>&nbsp;source)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Set the shooter of this projectile.</div>
+<div class="block">设置该抛射物的发射者.</div>
 </div>
 </div>
 </div>
@@ -169,10 +171,12 @@ extends <a href="Entity.html" title="org.bukkit.entity中的接口">Entity</a></
 <h3>getShooter</h3>
 <div class="member-signature"><span class="annotations"><a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/Nullable.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@Nullable</a>
 </span><span class="return-type"><a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/Nullable.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@Nullable</a> <a href="../projectiles/ProjectileSource.html" title="org.bukkit.projectiles中的接口">ProjectileSource</a></span>&nbsp;<span class="element-name">getShooter</span>()</div>
-<div class="block">Retrieve the shooter of this projectile.</div>
+<div class="block">获取该抛射物的发射者.
+ <p>
+ 原文:Retrieve the shooter of this projectile.</div>
 <dl class="notes">
 <dt>返回:</dt>
-<dd>the <a href="../projectiles/ProjectileSource.html" title="org.bukkit.projectiles中的接口"><code>ProjectileSource</code></a> that shot this projectile</dd>
+<dd>发射该抛射物的 <a href="../projectiles/ProjectileSource.html" title="org.bukkit.projectiles中的接口"><code>ProjectileSource</code></a></dd>
 </dl>
 </section>
 </li>
@@ -181,10 +185,12 @@ extends <a href="Entity.html" title="org.bukkit.entity中的接口">Entity</a></
 <h3>setShooter</h3>
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">setShooter</span><wbr><span class="parameters">(<a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/Nullable.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@Nullable</a>
  <a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/Nullable.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@Nullable</a> <a href="../projectiles/ProjectileSource.html" title="org.bukkit.projectiles中的接口">ProjectileSource</a>&nbsp;source)</span></div>
-<div class="block">Set the shooter of this projectile.</div>
+<div class="block">设置该抛射物的发射者.
+ <p>
+ 原文:Set the shooter of this projectile.</div>
 <dl class="notes">
 <dt>参数:</dt>
-<dd><code>source</code> - the <a href="../projectiles/ProjectileSource.html" title="org.bukkit.projectiles中的接口"><code>ProjectileSource</code></a> that shot this projectile</dd>
+<dd><code>source</code> - 发射该抛射物的 <a href="../projectiles/ProjectileSource.html" title="org.bukkit.projectiles中的接口"><code>ProjectileSource</code></a></dd>
 </dl>
 </section>
 </li>
@@ -192,12 +198,16 @@ extends <a href="Entity.html" title="org.bukkit.entity中的接口">Entity</a></
 <section class="detail" id="doesBounce()">
 <h3>doesBounce</h3>
 <div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">doesBounce</span>()</div>
-<div class="block">Determine if this projectile should bounce or not when it hits.
+<div class="block">判断该抛射物在击中物体时是否应该弹跳.
+ <p>
+ 如果一个小型火球不弹跳,则会使目标着火.
+ <p>
+ 原文:Determine if this projectile should bounce or not when it hits.
  <p>
  If a small fireball does not bounce it will set the target on fire.</div>
 <dl class="notes">
 <dt>返回:</dt>
-<dd>true if it should bounce.</dd>
+<dd>如果应该弹跳，则返回true。</dd>
 </dl>
 </section>
 </li>
@@ -205,11 +215,13 @@ extends <a href="Entity.html" title="org.bukkit.entity中的接口">Entity</a></
 <section class="detail" id="setBounce(boolean)">
 <h3>setBounce</h3>
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">setBounce</span><wbr><span class="parameters">(boolean&nbsp;doesBounce)</span></div>
-<div class="block">Set whether or not this projectile should bounce or not when it hits
+<div class="block">设置该抛射物在击中物体时是否应该弹跳.
+ <p>
+ 原文:Set whether or not this projectile should bounce or not when it hits
  something.</div>
 <dl class="notes">
 <dt>参数:</dt>
-<dd><code>doesBounce</code> - whether or not it should bounce.</dd>
+<dd><code>doesBounce</code> - 是否应该弹跳</dd>
 </dl>
 </section>
 </li>
