@@ -154,12 +154,12 @@ implements <a href="../Cancellable.html" title="org.bukkit.event中的接口">Ca
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a> <a href="../../entity/Entity.html" title="org.bukkit.entity中的接口">Entity</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getEntity()" class="member-name-link">getEntity</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">获得正在被玩家剪羊毛的实体对象.</div>
+<div class="block">获取玩家正在剪切的实体.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a> <a href="../../inventory/EquipmentSlot.html" title="org.bukkit.inventory中的枚举">EquipmentSlot</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getHand()" class="member-name-link">getHand</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Gets the hand used to shear the entity.</div>
+<div class="block">获取用于剪切实体的手.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a> <a href="../HandlerList.html" title="org.bukkit.event中的类">HandlerList</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getHandlerList()" class="member-name-link">getHandlerList</a>()</code></div>
@@ -170,7 +170,7 @@ implements <a href="../Cancellable.html" title="org.bukkit.event中的接口">Ca
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a> <a href="../../inventory/ItemStack.html" title="org.bukkit.inventory中的类">ItemStack</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getItem()" class="member-name-link">getItem</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Gets the item used to shear the entity.</div>
+<div class="block">获取用于剪切实体的物品.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isCancelled()" class="member-name-link">isCancelled</a>()</code></div>
@@ -277,7 +277,7 @@ implements <a href="../Cancellable.html" title="org.bukkit.event中的接口">Ca
 <h3>getEntity</h3>
 <div class="member-signature"><span class="annotations"><a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a>
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a> <a href="../../entity/Entity.html" title="org.bukkit.entity中的接口">Entity</a></span>&nbsp;<span class="element-name">getEntity</span>()</div>
-<div class="block">获得正在被玩家剪羊毛的实体对象.
+<div class="block">获取玩家正在剪切的实体.
  <p>
  原文:Gets the entity the player is shearing</div>
 <dl class="notes">
@@ -291,10 +291,12 @@ implements <a href="../Cancellable.html" title="org.bukkit.event中的接口">Ca
 <h3>getItem</h3>
 <div class="member-signature"><span class="annotations"><a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a>
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a> <a href="../../inventory/ItemStack.html" title="org.bukkit.inventory中的类">ItemStack</a></span>&nbsp;<span class="element-name">getItem</span>()</div>
-<div class="block">Gets the item used to shear the entity.</div>
+<div class="block">获取用于剪切实体的物品.
+ <p>
+ 原文:Gets the item used to shear the entity.</div>
 <dl class="notes">
 <dt>返回:</dt>
-<dd>the shears</dd>
+<dd>剪刀</dd>
 </dl>
 </section>
 </li>
@@ -303,10 +305,12 @@ implements <a href="../Cancellable.html" title="org.bukkit.event中的接口">Ca
 <h3>getHand</h3>
 <div class="member-signature"><span class="annotations"><a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a>
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://javadoc.io/doc/org.jetbrains/annotations/23.0.0/org/jetbrains/annotations/NotNull.html" title="org.jetbrains.annotations中的类或接口" class="external-link">@NotNull</a> <a href="../../inventory/EquipmentSlot.html" title="org.bukkit.inventory中的枚举">EquipmentSlot</a></span>&nbsp;<span class="element-name">getHand</span>()</div>
-<div class="block">Gets the hand used to shear the entity.</div>
+<div class="block">获取用于剪切实体的手.
+ <p>
+ 原文:Gets the hand used to shear the entity.</div>
 <dl class="notes">
 <dt>返回:</dt>
-<dd>the hand</dd>
+<dd>手</dd>
 </dl>
 </section>
 </li>
